@@ -215,6 +215,10 @@ p {
     font-size: 0.75rem;
 }
 
+.footer-links a {
+    color: #F6F4EB;
+    text-decoration: none;
+}
 
 /* SMALLER SCREENS */
 

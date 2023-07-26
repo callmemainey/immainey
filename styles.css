@@ -1,0 +1,372 @@
+/* Resources */
+
+/* Fonts: */
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Colours:  */
+
+/* Cream - #F6F4EB | Light Blue - #91C8E4 | Med Blue - #749BC2 | Dark Blue #4682A9 */
+
+
+/* BODY */
+
+
+
+.background-gradient { 
+    background: linear-gradient(-45deg, #7F46A6, #5A11BF, #AC65BF, #7139BF, #421F73);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.background-gradient2 { 
+    background: linear-gradient(-45deg, #7F46A6, #5A11BF, #AC65BF, #7139BF, #421F73);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-radius: 25px 25px 0px 0px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+	
+	height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F4EB;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #380769;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #380769;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #380769;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.highlighted {
+    color: #b769c5 ;
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    gap: 30px;
+    height: 500px;
+    margin-left: 10%;
+}
+
+.header-images {
+    grid-area: 1 / 2 / 1 / 2; 
+}
+
+.mainey-logo {
+    width: 500px;
+}
+
+/* ABOUT ME */
+
+.aboutme-container {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    gap: 30px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+.aboutme-center {
+    grid-column-start: span 2;
+}
+
+.aboutme-center img {
+    border-radius: 50%;
+    width: 300px;
+    /* margin-bottom: 30px; */
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 30px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+}
+
+.skills-container p {
+    text-align: justify;
+}
+
+.skills-title {
+    grid-column-start: span 2;
+}
+
+.skills-content img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+/* CONTACT */
+
+.contact-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 30px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+}
+
+.contact-btn {
+    background-color: #380769;
+    background-image: linear-gradient(to bottom, #7310d5, #380769);
+    padding: 10px 40px;
+    border: none;
+    color: #F6F4EB;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+.contact-btn:hover {
+    background-image: linear-gradient(to bottom, #bd7efb, #380769);
+    cursor:help;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 0px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+
+}
+.icon {
+    padding: 30px 15px 15px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.footer-foot {
+    color: #F6F4EB;
+    font-size: 0.75rem;
+}
+
+
+/* SMALLER SCREENS */
+
+
+
+ @media  (max-width: 667px) {
+
+/* BODY */
+
+h1 {
+    font-size: 3rem;
+    color: #380769;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+}
+
+.header-container {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+}
+
+.header-images {
+    grid-area: 1 / 2 / 1 / 2; 
+}
+
+.mainey-logo {
+    width: 300px;
+    align-self: center;
+}
+
+/* ABOUT ME */
+
+.aboutme-container {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    gap: 30px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+.aboutme-center {
+    grid-column-start: span 2;
+}
+
+.aboutme-center img {
+    border-radius: 50%;
+    width: 300px;
+    /* margin-bottom: 30px; */
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: block;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 30px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+}
+
+.skills-container p {
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 40px
+}
+
+/* .skills-title {
+    grid-column-start: span 2;
+} */
+
+.skills-content img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+/* CONTACT */
+
+.contact-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 30px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+}
+
+.contact-btn {
+    background-color: #380769;
+    background-image: linear-gradient(to bottom, #7310d5, #380769);
+    padding: 10px 40px;
+    border: none;
+    color: #F6F4EB;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+.contact-btn:hover {
+    background-image: linear-gradient(to bottom, #bd7efb, #380769);
+    cursor:help;
+}
+
+.contact-content img {
+    width: 250px;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
+   gap: 0px;
+   /* margin-top: 30px; */
+   margin-bottom: 30px;
+
+}
+.icon {
+    padding: 30px 15px 15px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.footer-foot {
+    color: #F6F4EB;
+    font-size: 0.75rem;
+}
+ }
+    

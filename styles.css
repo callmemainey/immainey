@@ -185,6 +185,7 @@ p {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 8px;
+    box-shadow: #00000080 3px 3px 10px;
 }
 
 .contact-btn:hover {

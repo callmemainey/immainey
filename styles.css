@@ -56,6 +56,10 @@ h1 {
     font-weight: 300;
 }
 
+.smaller-h1 {
+    font-size: 2rem;
+}
+
 h2 {
     font-size: 2.5rem;
     color: #380769;
@@ -329,7 +333,7 @@ h1 {
 .contact-btn {
     background-color: #380769;
     background-image: linear-gradient(to bottom, #7310d5, #380769);
-    padding: 10px 40px;
+    padding: 10px 20px;
     border: none;
     color: #F6F4EB;
     font-size: 20px;
